@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "492628207765",
+    "firebase_url": "https://utnee-172506.firebaseio.com",
+    "project_id": "utnee-172506",
+    "storage_bucket": "utnee-172506.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492628207765:android:c75bc8a568632e11",
+        "android_client_info": {
+          "package_name": "com.butions.utnee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492628207765-6bskctgbh5mg7pmuhs8v83p5tkhsioq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHvapE38NqLZP8yIg0A8utmb47yBNG98o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

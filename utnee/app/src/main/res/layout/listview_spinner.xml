@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:textSize="14sp"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:typeface="monospace"
+    android:gravity="center_vertical"
+    android:checkMark="@drawable/default_checkbox"
+    android:textColor="@color/grey_900"/>

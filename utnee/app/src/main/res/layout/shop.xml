@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:clickable="true"
+    android:paddingBottom="45dp"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/toolbarShop"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/color_base">
+
+        <TextView
+            android:id="@+id/textShop"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="16sp"
+            android:text="My Shops"
+            android:typeface="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="8dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/my_list_shops"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/grey_cc"
+        android:dividerHeight="1dp"
+        android:layout_below="@+id/toolbarShop"
+        tools:listitem="@layout/listview_shops_layout">
+    </ListView>
+
+</RelativeLayout>

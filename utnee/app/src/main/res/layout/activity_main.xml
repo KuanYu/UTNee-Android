@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/color_base"
+    tools:context="com.butions.utnee.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon_utnai"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:src="@drawable/ic_utnee_logo_white"/>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button_facebook"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="12dp"
+            android:scaleType="centerInside"
+            android:textSize="16sp"
+            android:typeface="monospace"
+            android:visibility="visible"
+            facebook:com_facebook_login_text="Sign in with Facebook"
+            facebook:com_facebook_logout_text="Connecting..."
+            android:elevation="4dp"/>
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/login_button_google"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:typeface="monospace"
+            android:visibility="visible"/>
+
+        <com.twitter.sdk.android.core.identity.TwitterLoginButton
+            android:id="@+id/login_button_twitter"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="4dp"/>
+
+        <TextView
+            android:id="@+id/text_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="Account already exists for provided email."
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:typeface="monospace"
+            android:drawableLeft="@drawable/ic_warning"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/text_other_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="* Please login with"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:typeface="monospace"
+            android:background="@color/blue_alpha_172"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

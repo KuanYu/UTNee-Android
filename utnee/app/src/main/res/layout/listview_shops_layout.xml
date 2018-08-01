@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="7dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="7dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_account_circle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:textColor="@color/blue"
+                    android:typeface="monospace"
+                    android:text="Name"/>
+
+                <TextView
+                    android:id="@+id/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:textSize="14sp"
+                    android:textColor="@color/red"
+                    android:typeface="monospace"
+                    android:layout_gravity="center"
+                    android:gravity="end"
+                    android:text="Edit"
+                    android:background="?attr/selectableItemBackground"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rate_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:paddingRight="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/blue"
+                    android:typeface="monospace"
+                    android:layout_gravity="center"
+                    android:text="0.0"/>
+
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star"/>
+
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star"/>
+
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star"/>
+
+                <ImageView
+                    android:id="@+id/star4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star"/>
+
+                <ImageView
+                    android:id="@+id/star5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_grey"/>
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/blue"
+                    android:typeface="monospace"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_dot"
+                    android:drawablePadding="5dp"
+                    android:text="Type foods"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_location"
+                    android:layout_marginTop="3dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/grey"
+                    android:typeface="monospace"
+                    android:gravity="start"
+                    android:text="location"
+                    android:paddingLeft="23dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/open_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:typeface="monospace"
+                    android:drawableLeft="@drawable/ic_timer"
+                    android:drawablePadding="5dp"
+                    android:text="open time"
+                    android:layout_weight="1.4"/>
+
+                <TextView
+                    android:id="@+id/code_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/green"
+                    android:typeface="monospace"
+                    android:drawableLeft="@drawable/ic_code_dot"
+                    android:drawablePadding="5dp"
+                    android:text="code"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.6"
+                    android:background="?attr/selectableItemBackground"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
